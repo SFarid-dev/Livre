@@ -1,0 +1,140 @@
+header {
+    display : flex
+}
+
+body {
+    margin : 0 0
+
+}
+
+.secteur1{
+    background-color: rgb(164, 158, 221);
+    min-height: 20%;
+
+}
+
+.secteur2{
+    background-color: grey;
+    min-height: 50%;
+}
+
+.secteur3{
+    background-color: black;
+    min-height: 30%;
+}
+table {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: -50;
+    border-collapse: collapse;
+}
+
+td {
+    display: inline;
+    text-align: center;
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40%;
+    max-width: 40%;
+    border-style: hidden;
+    padding: 10px; /* Ajoutez du padding pour l'espacement interne */
+    line-height: 1.5;
+}
+.book-card {
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    display: inline-block;
+}
+
+.book-title {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.user-id {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.book-card {
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    display: inline-block;
+}
+
+.book-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-actions {
+    margin-top: 10px;
+}
+
+.book-actions a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.book-actions a:hover {
+    background-color: #0056b3;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
