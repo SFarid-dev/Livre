@@ -1,0 +1,20 @@
+# Utilise l'image de PHP avec Apache
+FROM php:8.2-apache
+
+# Mettre à jour les paquets et installer les dépendances nécessaires
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql pgsql \
+    && docker-php-ext-enable pgsql pdo_pgsql
+
+# Copier le code source de l'application dans le répertoire de travail du conteneur
+COPY . /var/www/html/
+
+# Exposer le port 80 pour Apache
+EXPOSE 80
+
+# Définir le répertoire de travail
+WORKDIR /var/www/html/
+
+# Command pour démarrer le serveur Apache
+CMD ["apache2-foreground"]
