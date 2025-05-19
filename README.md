@@ -19,7 +19,7 @@ Ce projet est une application web de gestion de livres qui permet aux utilisateu
    - docker build -t shokapik 
    - docker compose up
 4. **Utilisation** :
-   - Bonne chance les gars chaud sa mère
+   - Bonne chance les gars c'est chaud sa mère
 
 5. **Fonctionnalités** :
    - CRUD utilisateur
